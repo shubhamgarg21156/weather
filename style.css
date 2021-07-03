@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+body{
+    background:#222222;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.current-weather{
+    height:80px;
+    width : 30vw;
+    background-color: gold;
+    margin : 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:stretch;
+    border-radius : 3%;
+}
+
+.Upper-div{
+    width:90%;
+    height: 10%;
+    display:flex;
+    margin-top:20px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius : 2%;
+}
+
+.Upper-div .input{
+    color:white;
+    background-color:black;
+    width:85%;
+    height:100%;
+    padding:20px;
+    font-size:15px;
+    box-sizing:border-box;
+    outline: none;
+    border:0;
+}
+
+.Upper-div .input:focus{
+    outline:none;
+}
+
+.Upper-div .button{
+    width:15%;
+    height:100%;
+    color:white;
+    border:none;
+    outline: none;
+    transition : 1s;
+    cursor:pointer;
+    font-size:16px;
+    font-weight: 400;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.Upper-div .button:hover{
+    background-color : white;
+    color:black;
+}
+
+
+/* Lower-div */
+.Lower-div{
+    height:80%;
+    width : 90%;
+    margin : 0px auto;
+    display : flex;
+    flex-wrap:wrap;
+    justify-content : center;
+    text-align: center;
+    color:black;
+    align-items:center;
+    border-radius : 3%;
+    background-color: rgba(255,255,255,0.8);
+}
+.Lower-div .main-weather{
+    width:100%;
+    /* text-align:center; */
+    font-size:10vh;
+    font-style:italic;
+    font-weight: bold;
+    font-family: monospace;
+}
+.Lower-div div{
+    width:100%;
+}
+.Lower-div .temp{
+    font-size:600%;
+    font-weight: 400;
+    word-spacing: 1px;
+    text-shadow: 4px 4px rgba(0,0,0,0.3);
+    background-color: black;
+    color:gold;
+}
+
+.Lower-div .date{
+    font-size : 300%;
+}
+.Lower-div .min-max{
+    font-size : 100%;
+}
+
+.Lower-div .place{
+    font-size : 200%;
+    background-color: black;
+    color:gold;
+}
+
+@media screen and (max-width:800px){
+.current-weather{
+    width:60%;
+}
+
+.Lower-div .temp{
+    font-size:400%;
+}
+
+}
+
+@media screen and (max-width:1343px){
+    .Lower-div .temp{
+        font-size:400%;
+    }
+    }
+
+@media screen and (max-width:710px){
+    .Lower-div .temp{
+        font-size:400%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .current-weather{
+        background-color:gold ;
+        width:80%;
+    }
+    
+    .Lower-div .temp{
+        font-size:400%;
+    }
+    .Lower-div .temp{
+        font-size:60px;
+        color:gold;
+        background-color: black;
+    }
+    
+    .Lower-div .date{
+        font-size : 200%;
+    }
+    
+    .Lower-div .place{
+        font-size : 20px;
+        background-color:black;
+        color: gold;
+    }
+
+    .Lower-div .main-weather{
+        font-size:40px;
+    }
+
+}
+
+
+/* Weather-forcast */
+
+.weather-forecast{
+    display : flex;
+    flex-wrap : wrap;
+    justify-content:center;
+    margin-top:50px;
+    
+}
+
+.weather-forecast .weather-forecast-item{
+    height : 250px;
+    width : 180px;
+    border : 2px solid gold;
+    border-radius : 3%;
+    text-align: center;
+    margin : 10px;
+    box-shadow: 4px -4px gold;
+    
+}
+
+.weather-forecast .weather-forecast-item .image img{
+    width : 80%;
+    height : 60%;
+}
+
+.weather-forecast .weather-forecast-item .day{
+    color:white;
+
+}
+
+.weather-forecast .weather-forecast-item .temp{
+    color:white;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/weather.png"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+</head>
+<body>
+    <div class="current-weather">
+        <div class="Upper-div">
+            <input type="text" placeholder="Enter the City Name: " autocomplete="off" class="input">
+            <button class="button">GO</button>
+        </div>
+
+        <!-- <div class="Lower-div">
+                <div class="place">
+                    Faridabad,IN
+                </div>
+                <div class="date">
+                    16 June,2021 
+                </div>
+                <div class="temp">
+                    25&degC
+                </div>
+                 <div class="main-weather">
+                    Clouds
+                 </div>
+
+        </div> -->
+    </div>
+
+    <div class="weather-forecast" id="weather-forecast">
+
+    </div>
+
+    <script type="text/javascript" src="city_list.json"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
