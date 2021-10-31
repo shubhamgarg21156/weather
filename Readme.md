@@ -3,7 +3,7 @@ A simple weather app built with HTML , CSS and JS and deployed on netlify.
 <h1>Features</h1>
 <ul>
   <li>Responsive UI</li>
-  <li>Get current Weather of any city.</li>
+  <li>Get current Weather of any city of the world</li>
   <li>Next one week weather forecast is displayed.</li> 
 </ul>
 <h1>API</h1>
