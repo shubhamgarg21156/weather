@@ -17,4 +17,4 @@ Weather data is retrieved from <a href="http://openweathermap.org/">http://openw
 </br>
 <img align="center" src="images/ss2.png">
 
-Made with ❤️ by shubham
+Made with ❤️ by shubham garg
